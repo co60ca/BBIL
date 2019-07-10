@@ -33,8 +33,14 @@ Our best results are as follows: < Include paper link >
 
 
 ## Deployment
-Our implementation uses the fixed-receiver moving-transmitter method of indoor localization. We use Raspberry Pis and BLE beacons as our receivers and transmitters respectively. The two seperate locations are as follows:
-< Include the two diagrams here > 
+Our implementation uses the fixed-receiver moving-transmitter method of indoor localization. We use Raspberry Pis and BLE beacons as our receivers and transmitters respectively. The two seperate locations are as follows (click to enlarge):
+
+### Office
+<img src="assets/room.png" alt="Office" height="400"/>
+
+### Lab
+<img src="assets/room-2.png" alt="Lab" height="400"/>
+
 We used the following equipment, configuration and software for the experiment.
 
 | | |
