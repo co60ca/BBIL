@@ -61,7 +61,7 @@ For brevity we subsequently use edge and beacon' to refer to these.
 
 The data recording was done via the [Beaconpi](https://github.com/co60ca/beaconpi) software. Beaconpi runs both on the edges and a centralized server which communicates bidirectionally between the two main components. The edges and server components sync to the same clock to ensure all elements of the system have a consistent clock. The frame records the fingerprint and the Received Signal Strength Indicator (RSSI) at the edge.
 
-To validate our methods we also collect ground truths via an [Android application](https://github.com/peterspenler/MapTracker) as the 
+To validate our methods we also collect ground truths via an [Android application](https://github.com/peterspenler/MapTracker) as the participants move around the experiment area.
 The Android application records the location of the wearer via self reporting and also collects the accelerometer and gyroscope data for the participant. The participants were asked to randomly walk around the room for around 3 minutes at least 3 times a day. This varied as is evident from the dataset which was expected. The participants walked in straight lines between landmarks that were placed frequently in the space.
 
 **Note**: data.csv, and data_wide.csv files which contain RSSI data contain interpolated true locations based on interpolating linearly between the last landmark presses in accordance to the descrete timesteps.
@@ -198,7 +198,7 @@ For specifics on Android data collection see our app:
 All date time formats are saved in [RFC3339](https://tools.ietf.org/html/rfc3339) with microsecond precision.
 
 # Python
-All python files are in `py/`
+All python files are in `py/`.
 We provide requirements with`pip install -r requirements.txt`alternatively consider a conda environment. We only require pandas for csv reading and datetime parsing. This will pull other requirements.
 
     # Gives you a dictionary with train, valid, test and other data
