@@ -9,7 +9,8 @@ We initially collected this dataset noting a lack of available indoor localizati
 The authoritative location of this dataset is < insert data repo >.
 
 ## Data Links
-< Include links here >
+The data can be downloaded from:
+[github.com](https://github.com/co60ca/BBIL/releases)
 
 ### Citation
 Please cite < give citation here > if you choose to use this dataset in your experiments.
@@ -22,10 +23,11 @@ If you wish to compare prediction results please calculate using absolute error 
 3. On this vector find the 90th percentile and mean and report those
 
 Our best results are as follows: < Include paper link >
+
 | Experiment | Model | Mean | 90th Percentile |
 | - | - | - | - |
-| 1 | LSTM | 1.5399 | 2.3059 |
-| 2 | Elman Network | 0.9620 | 1.3792 |
+| 1 | LSTM | 1.5399 m | 2.3059 m |
+| 2 | Elman Network | 0.9620 m | 1.3792 m |
 
 
 
@@ -33,6 +35,7 @@ Our best results are as follows: < Include paper link >
 Our implementation uses the fixed-receiver moving-transmitter method of indoor localization. We use Raspberry Pis and BLE beacons as our receivers and transmitters respectively. The two seperate locations are as follows:
 < Include the two diagrams here > 
 We used the following equipment, configuration and software for the experiment.
+
 | | |
 | - | - |
 | Android Minimum Version | 4.4 | 
