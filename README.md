@@ -1,9 +1,10 @@
 
+  
 # BLE Beacon Indoor Localization Dataset (BBIL Dataset)
 # Introduction
 This dataset was created to facilitate reasearch into indoor localization with BLE beacons. Data was collected from September 2018 to May 2019 in two seperate locations.
-Several participants assisted with the experiment each carrying 
-This dataset is released in hope that researchers will use it as a 
+Several participants assisted with the experiment each carrying a BLE beacon and a smartphone.
+This dataset is released in hope that researchers will use it as a benchmark for indoor localization techniques.
 We initially collected this dataset noting a lack of available indoor localization datasets with labeled data. The dataset is being utilized by the authors for an upcoming paper that can be found here < insert link here >.
 
 The authoritative location of this dataset is < insert data repo >.
@@ -13,7 +14,7 @@ The data can be downloaded from:
 [github.com](https://github.com/co60ca/BBIL/releases)
 
 ### Citation
-Please cite < give citation here > if you choose to use this dataset in your experiments.
+Please cite < give citation here > if you choose to use this dataset in a publication.
 
 ## Performance
 If you wish to compare prediction results please calculate using absolute error (i.e. the L2 distance from your predictions). In our experiments we compare the 90th percentile or the distance which 90% of errors are less than.
@@ -52,10 +53,7 @@ We used the following equipment, configuration and software for the experiment.
 We use Raspberry Pis and BLE beacons as our receivers and 
 For brevity we subsequently use edge and beacon' to refer to these.
 
-The data recording was done via the [Beaconpi](https://github.com/co60ca/beaconpi) software. Beaconpi runs both on the edges and a centralized server which communicates bidirectionally between the two main 
-The edges and server components sync to the same clock to 
-The frame records the fingerprint and the Received Signal 
-The edge then stamps the frame with a timestamp based on its local synced clock.
+The data recording was done via the [Beaconpi](https://github.com/co60ca/beaconpi) software. Beaconpi runs both on the edges and a centralized server which communicates bidirectionally between the two main components. The edges and server components sync to the same clock to ensure all elements of the system have a consistent clock. The frame records the fingerprint and the Received Signal Strength Indicator (RSSI) at the edge.
 
 To validate our methods we also collect ground truths via an [Android application](https://github.com/peterspenler/MapTracker) as the 
 The Android application records the location of the wearer via self reporting and also collects the accelerometer and gyroscope data for the participant. The participants were asked to randomly walk around the room for around 3 minutes at least 3 times a day. This varied as is evident from the dataset which was expected. The participants walked in straight lines between landmarks that were placed frequently in the space.
@@ -103,7 +101,7 @@ The prefix for each filename follows the strftime format `%Y-%m-%dT%H-%M-%S-%f` 
 
 The number between the timestamp and file type is the beacons unique identifier.
 
-All CSV file were formatted with comma seperated fields with new records indicated with the new line character. This is the default Python pandas format.
+All CSV file were formatted with comma separated fields with new records indicated with the new line character. This is the default Python pandas format.
 Comments in this document are depicted with the # symbol and are not present in the files.
 
 
@@ -199,4 +197,3 @@ We provide requirements with`pip install -r requirements.txt`alternatively consi
 
     # Gives you a dictionary with train, valid, test and other data
     ds = packageutils.unpackage_datasets(dirname, dataobject_format=False)
-    
