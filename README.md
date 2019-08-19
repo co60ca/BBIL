@@ -7,14 +7,27 @@ Several participants assisted with the experiment each carrying a BLE beacon and
 This dataset is released in hope that researchers will use it as a benchmark for indoor localization techniques.
 We initially collected this dataset noting a lack of available indoor localization datasets with labeled data. The dataset is being utilized by the authors for an upcoming paper that can be found here < insert link here >.
 
-The authoritative location of this dataset is < insert data repo >.
+The authoritative location of this dataset is [https://doi.org/10.5683/SP2/UTZTFT](https://doi.org/10.5683/SP2/UTZTFT).
 
 ## Data Links
 The data can be downloaded from:
 [github.com](https://github.com/co60ca/BBIL/releases)
 
 ### Citation
-Please cite < give citation here > if you choose to use this dataset in a publication.
+Please cite with the following BibTeX if you choose to use this dataset in a publication.
+
+```
+@data{kennedy2019BBIL,
+	author = {Kennedy, Maeve and Spachos, Petros and Taylor, Graham W.},
+	publisher = {Scholars Portal Dataverse},
+	title = {BLE beacon indoor localization dataset},
+	year = {2019},
+	version = {V1},
+	doi = {10.5683/SP2/UTZTFT},
+	url = {https://doi.org/10.5683/SP2/UTZTFT}
+}
+
+```
 
 ## Performance
 If you wish to compare prediction results please calculate using absolute error (i.e. the L2 distance from your predictions). In our experiments we compare the 90th percentile or the distance which 90% of errors are less than.
