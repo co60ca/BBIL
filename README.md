@@ -36,7 +36,7 @@ If you wish to compare prediction results please calculate using absolute error 
 2. Concatenate this list of errors into a vector for all trials/files the test directory
 3. On this vector find the 90th percentile and mean and report those
 
-Our best results are as follows: < Include paper link >
+Our best results are as follows:
 
 | Experiment | Model | Mean | 90th Percentile |
 | - | - | - | - |
@@ -49,9 +49,13 @@ Our best results are as follows: < Include paper link >
 Our implementation uses the fixed-receiver moving-transmitter method of indoor localization. We use Raspberry Pis and BLE beacons as our receivers and transmitters respectively. The two seperate locations are as follows (click to enlarge):
 
 ### Office
+Roughly 11 m x 25 m
+
 <img src="assets/room.png" alt="Office" height="400"/>
 
 ### Lab
+Roughly 11 m x 7 m
+
 <img src="assets/room-2.png" alt="Lab" height="400"/>
 
 We used the following equipment, configuration and software for the experiment.
